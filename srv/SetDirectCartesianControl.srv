@@ -1,0 +1,5 @@
+bool[] toggle # Set direct control either ON or OFF with this flag
+bool[] tool_space # Define if motions happen in tool space or robot's base
+---
+bool success # indicate successful run of triggered service
+string message # informational, e.g. for error messages

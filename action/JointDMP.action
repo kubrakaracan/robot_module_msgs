@@ -1,0 +1,10 @@
+#goal definition
+robot_module_msgs/JointSpaceDMP DMP
+---
+#result definition
+sensor_msgs/JointState joints
+bool fully_succeeded
+---
+#feedback
+sensor_msgs/JointState joints
+float32 phase

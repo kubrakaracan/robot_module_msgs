@@ -1,0 +1,12 @@
+#goal definition
+sensor_msgs/JointState[] joints
+float32 speed_percent
+float32 blend_radius # CURRENTLY NOT USED. WILL BE USED LATER WHEN VIA POINT FUNCTIONALITY IS IMPLEMENTED
+---
+#result definition
+sensor_msgs/JointState final_joints
+bool fully_succeeded
+---
+#feedback
+sensor_msgs/JointState joints
+float32 joint_diff

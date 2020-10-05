@@ -1,0 +1,10 @@
+#goal definition
+robot_module_msgs/CartesianSpaceDMP DMP
+---
+#result definition
+geometry_msgs/Pose final_pose
+bool fully_succeeded
+---
+#feedback
+geometry_msgs/Pose current_pose
+float32 phase

@@ -1,0 +1,5 @@
+uint8 outputNr # the number of the output to change
+bool value # put the specified output to true or false
+---
+bool success # indicate successful run of triggered service
+string message # informational, e.g. for error messages

@@ -1,0 +1,15 @@
+#goal definition
+geometry_msgs/Pose[] target_pose
+float32 speed_percent
+sensor_msgs/JointState[] init_joints # This parameter is optional. Current joint configuration is used if this is not provided
+float32 blend_radius # CURRENTLY NOT USED. WILL BE USED LATER WHEN VIA POINT FUNCTIONALITY IS IMPLEMENTED
+---
+#result definition
+geometry_msgs/Pose final_pose
+bool fully_succeeded
+---
+#feedback
+geometry_msgs/Pose current_pose
+float32 total_diff
+float32 pos_diff
+float32 rot_diff
