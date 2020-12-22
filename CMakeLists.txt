@@ -60,6 +60,9 @@ add_message_files(
   CartesianVelocity.msg
   CartesianSpaceDMP.msg
   JointSpaceDMP.msg
+  ImpedanceParameters.msg
+  JointCommand.msg
+  CartesianCommand.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -67,6 +70,7 @@ add_service_files(FILES
   SetRobotTool.srv
   Output.srv
   SetDirectCartesianControl.srv
+  SetString.srv
 )
 
 # Generate actions in the 'action' folder
@@ -113,11 +117,13 @@ generate_messages(
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
-catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES robot_module_msgs
- CATKIN_DEPENDS message_runtime 
-#  DEPENDS system_lib
+catkin_package( CATKIN_DEPENDS
+  message_runtime 
+  actionlib_msgs
+  std_msgs
+  sensor_msgs
+  geometry_msgs
+  std_msgs
 )
 
 ###########
