@@ -1,0 +1,5 @@
+ImpedanceParameters impedance
+float32 change_rate # change of impedance per second
+---
+bool success # indicate successful run of triggered service
+string message # informational, e.g. for error messages
