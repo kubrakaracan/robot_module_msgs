@@ -71,6 +71,7 @@ add_service_files(FILES
   Output.srv
   SetDirectCartesianControl.srv
   SetString.srv
+  SetCartImpendance.srv
 )
 
 # Generate actions in the 'action' folder
