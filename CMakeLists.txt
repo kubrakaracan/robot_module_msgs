@@ -72,7 +72,7 @@ add_service_files(FILES
 # Generate actions in the 'action' folder
 add_action_files(
 DIRECTORY action	
-FILES JointDMP.action CartTrapVel.action CartLinTask.action CartDMP.action JointTrapVel.action
+FILES JointDMP.action CartTrapVel.action CartLinTask.action CartDMP.action JointTrapVel.action JointCancel.action
 )
 
 ## Generate added messages and services with any dependencies listed here

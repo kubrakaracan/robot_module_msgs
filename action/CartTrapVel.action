@@ -1,16 +1,15 @@
 #goal definition
-float64[16] target_pose
+geometry_msgs/Pose[] target_pose
 float32 speed_percent
-float64 dX_max
-float32 t_scale
-sensor_msgs/JointState init_joints # This parameter is optional. Current joint configuration is used if this is not provided
+sensor_msgs/JointState[] init_joints # This parameter is optional. Current joint configuration is used if this is not provided
 float32 blend_radius # CURRENTLY NOT USED. WILL BE USED LATER WHEN VIA POINT FUNCTIONALITY IS IMPLEMENTED
 ---
 #result definition
-float64[16] final_pose
+geometry_msgs/Pose final_pose
 bool fully_succeeded
 ---
 #feedback
-float64[16] current_pose#float32 total_diff
+geometry_msgs/Pose current_pose
+float32 total_diff
 float32 pos_diff
 float32 rot_diff
